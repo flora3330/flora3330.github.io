@@ -1,22 +1,23 @@
-// Animate skill bars in once they scroll into view
+// Subtle fade-in for skill groups as they scroll into view
 document.addEventListener('DOMContentLoaded', () => {
-  const bars = document.querySelectorAll('.skill-bar span');
-
-  bars.forEach(bar => {
-    bar.dataset.target = bar.style.width;
-    bar.style.width = '0%';
+  const groups = document.querySelectorAll('.skill-group');
+ 
+  groups.forEach(group => {
+    group.style.opacity = '0';
+    group.style.transform = 'translateY(8px)';
   });
-
+ 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const bar = entry.target;
-        bar.style.transition = 'width 0.8s ease';
-        bar.style.width = bar.dataset.target;
-        observer.unobserve(bar);
+        const el = entry.target;
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+        observer.unobserve(el);
       }
     });
-  }, { threshold: 0.4 });
-
-  bars.forEach(bar => observer.observe(bar));
+  }, { threshold: 0.3 });
+ 
+  groups.forEach(group => observer.observe(group));
 });

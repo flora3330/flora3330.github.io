@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alex Rivera — Data Analyst & Data Scientist</title>
+<meta name="description" content="Portfolio of data science and analytics projects." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="wordmark">Alex Rivera</a>
+    <nav class="nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="resume.pdf" class="btn-outline" download>Résumé ↓</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <p class="eyebrow">DATA ANALYST / DATA SCIENTIST</p>
+    <h1>I turn messy data<br>into decisions people trust.</h1>
+    <p class="hero-sub">
+      I build the pipeline from raw numbers to clear answers — cleaning and modeling data,
+      then shaping it into dashboards and reports that non-technical teams actually use.
+      Based in Seattle, WA. Open to full-time analytics and data science roles.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn-primary">See the work</a>
+      <a href="mailto:alex.rivera@email.com" class="btn-text">alex.rivera@email.com →</a>
+    </div>
+  </section>
+
+  <div class="axis-rule" aria-hidden="true"></div>
+
+  <!-- PROJECTS -->
+  <section id="work" class="section wrap">
+    <div class="section-head">
+      <p class="eyebrow">PROJECTS / 03</p>
+      <h2>Selected work</h2>
+    </div>
+
+    <div class="project-list">
+
+      <article class="project">
+        <div class="project-fig">
+          <span class="fig-label">Fig. 01</span>
+        </div>
+        <div class="project-body">
+          <h3>Customer churn prediction</h3>
+          <p>
+            Built a classification model to flag subscribers likely to cancel within 30 days,
+            using six months of usage and billing history. Model outputs feed a weekly list
+            the retention team calls directly, cutting response time from weeks to days.
+          </p>
+          <ul class="metrics">
+            <li><span class="metric-value">0.84</span><span class="metric-label">ROC-AUC</span></li>
+            <li><span class="metric-value">−18%</span><span class="metric-label">churn, 1 qtr</span></li>
+            <li><span class="metric-value">12K</span><span class="metric-label">accounts scored/wk</span></li>
+          </ul>
+          <div class="tags">
+            <span>Python</span><span>scikit-learn</span><span>SQL</span><span>Airflow</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Case study →</a>
+            <a href="#">Repo ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-fig">
+          <span class="fig-label">Fig. 02</span>
+        </div>
+        <div class="project-body">
+          <h3>Regional demand forecasting</h3>
+          <p>
+            Replaced a spreadsheet-based forecast with a time-series model (Prophet + XGBoost
+            ensemble) for weekly demand across 40 retail locations, reducing overstock write-offs
+            and giving planners a two-week lead time instead of overnight guesswork.
+          </p>
+          <ul class="metrics">
+            <li><span class="metric-value">−23%</span><span class="metric-label">forecast error</span></li>
+            <li><span class="metric-value">40</span><span class="metric-label">locations</span></li>
+            <li><span class="metric-value">$310K</span><span class="metric-label">est. savings/yr</span></li>
+          </ul>
+          <div class="tags">
+            <span>Python</span><span>Prophet</span><span>XGBoost</span><span>Looker</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Case study →</a>
+            <a href="#">Repo ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-fig">
+          <span class="fig-label">Fig. 03</span>
+        </div>
+        <div class="project-body">
+          <h3>Support ticket triage dashboard</h3>
+          <p>
+            Designed and shipped a live dashboard that clusters incoming support tickets by
+            topic and urgency using lightweight NLP, so leads can staff the queue before it
+            backs up instead of after.
+          </p>
+          <ul class="metrics">
+            <li><span class="metric-value">−31%</span><span class="metric-label">avg. response time</span></li>
+            <li><span class="metric-value">9</span><span class="metric-label">topic clusters</span></li>
+            <li><span class="metric-value">daily</span><span class="metric-label">refresh</span></li>
+          </ul>
+          <div class="tags">
+            <span>Python</span><span>spaCy</span><span>Streamlit</span><span>PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Case study →</a>
+            <a href="#">Repo ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="axis-rule" aria-hidden="true"></div>
+
+  <!-- ABOUT / SKILLS -->
+  <section id="about" class="section wrap">
+    <div class="section-head">
+      <p class="eyebrow">ABOUT</p>
+      <h2>Background & tools</h2>
+    </div>
+
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a data analyst / data scientist with 3+ years turning ambiguous business questions
+        into models, dashboards, and decisions. My strength is the full loop — I'm as comfortable
+        writing the SQL and cleaning the data as I am presenting the finding to a VP who has
+        five minutes and one question: "so what do we do?"
+        <br><br>
+        Previously at a mid-size retail analytics team; before that, economics research.
+        I care about work that ships and gets used, not models that live in a notebook.
+      </p>
+
+      <div class="skills">
+        <div class="skill-row">
+          <span class="skill-name">Python / pandas</span>
+          <span class="skill-bar"><span style="width:92%"></span></span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">SQL</span>
+          <span class="skill-bar"><span style="width:90%"></span></span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">Statistical modeling</span>
+          <span class="skill-bar"><span style="width:80%"></span></span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">Machine learning</span>
+          <span class="skill-bar"><span style="width:72%"></span></span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">Dashboards (Looker / Tableau)</span>
+          <span class="skill-bar"><span style="width:78%"></span></span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">Experiment design</span>
+          <span class="skill-bar"><span style="width:68%"></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="eyebrow">CONTACT</p>
+      <h2>Let's talk data.</h2>
+      <a href="mailto:alex.rivera@email.com" class="btn-primary">alex.rivera@email.com</a>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="resume.pdf" download>Résumé ↓</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="footer-note">© 2026 Alex Rivera. Built with plain HTML/CSS, hosted on GitHub Pages.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -49,39 +49,49 @@
       <p class="eyebrow">PROJECTS / 03</p>
       <h2>Selected work</h2>
     </div>
-
+ 
     <div class="project-list">
-
+ 
       <article class="project">
-        <div class="project-fig">
-          <span class="fig-label">Fig. 01</span>
+        <div class="project-gallery">
+          <div class="project-media">
+            <img src="images/climate-viz-1.jpg" alt="Climate extreme temperature visualization 1" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="media-fallback">Add image: images/climate-viz-1.jpg</div>
+          </div>
+          <div class="project-media">
+            <img src="images/climate-viz-2.jpg" alt="Climate extreme temperature visualization 2" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="media-fallback">Add image: images/climate-viz-2.jpg</div>
+          </div>
+          <div class="project-media">
+            <img src="images/WRF6_map_cold_tmin.png" alt="Climate extreme temperature visualization 3" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="media-fallback">Add image: images/WRF6_map_cold_tmin.png</div>
+          </div>
         </div>
+        <p class="fig-label">Fig. 01</p>
         <div class="project-body">
-          <h3>Customer churn prediction</h3>
+          <h3>Extreme temperature event detection</h3>
           <p>
-            Built a classification model to flag subscribers likely to cancel within 30 days,
-            using six months of usage and billing history. Model outputs feed a weekly list
-            the retention team calls directly, cutting response time from weeks to days.
+            Built a climate data analysis workflow to identify and map extreme temperature events across
+            weather observations from multiple monitoring stations. Developed a ranking methodology 
+            that stays robust when station records are incomplete, improving the reliability of 
+            long-term climate trend analysis.
           </p>
           <ul class="metrics">
-            <li><span class="metric-value">0.84</span><span class="metric-label">ROC-AUC</span></li>
-            <li><span class="metric-value">−18%</span><span class="metric-label">churn, 1 qtr</span></li>
-            <li><span class="metric-value">12K</span><span class="metric-label">accounts scored/wk</span></li>
+            <li><span class="metric-value">40+</span><span class="metric-label">years of data</span></li>
+            <li><span class="metric-value">50+</span><span class="metric-label">weather stations</span></li>
           </ul>
           <div class="tags">
-            <span>Python</span><span>scikit-learn</span><span>SQL</span><span>Airflow</span>
-          </div>
-          <div class="project-links">
-            <a href="#">Case study →</a>
-            <a href="#">Repo ↗</a>
+            <span>R</span><span>Climate Data</span><span>Statistical Analysis</span>
           </div>
         </div>
       </article>
-
+ 
       <article class="project">
-        <div class="project-fig">
-          <span class="fig-label">Fig. 02</span>
+        <div class="project-media">
+          <img src="images/demand-forecasting.jpg" alt="Screenshot of the regional demand forecasting dashboard" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="media-fallback">Add image: images/demand-forecasting.jpg</div>
         </div>
+        <p class="fig-label">Fig. 02</p>
         <div class="project-body">
           <h3>Regional demand forecasting</h3>
           <p>
@@ -103,7 +113,7 @@
           </div>
         </div>
       </article>
-
+      
       <article class="project">
         <div class="project-fig">
           <span class="fig-label">Fig. 03</span>
@@ -111,7 +121,7 @@
         <div class="project-body">
               <h3>HIV drug-resistance mutation explorer</h3>
           <p>
-            Developed an interactive data visualization to help researchers and clinicians explore how
+            Buit an interactive data visualization to help researchers and clinicians explore how
             HIV reverse transcriptase (RT) mutations drive resistance to commonly used RT
             inhibitor drugs. Combines mutation prevalence data with resistance profiles into
             one explorable interface, making it easier to reason through complex mutation
